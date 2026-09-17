@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="./src/output.css" rel="stylesheet">
+
+  <title>JavaScript Project - Gita Sundara</title>
+
+</head>
+
+
+<body class="bg-[#FFF9F0] text-[#654936]">
+
+
+  <!-- NAVBAR -->
+  <nav class="bg-[#FFF9F0] border-b border-[#EAD7C2]">
+
+    <div class="max-w-6xl mx-auto px-5 py-5">
+
+      <div class="flex justify-between items-center">
+
+        <a href="./index.html"
+          class="text-2xl font-bold text-[#80583D] hover:text-[#B9784F]">
+
+          Gita<span class="text-[#D89A70]">.</span>
+
+        </a>
+
+
+        <a href="./LandingPage.html"
+          class="text-sm font-medium text-[#80583D] hover:text-[#B9784F] transition">
+
+          ← Back to Portfolio
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <main class="min-h-screen py-16">
+
+    <div class="max-w-4xl mx-auto px-5">
+
+
+      <div class="text-center mb-12">
+
+        <p class="text-[#B9784F] font-semibold mb-2">
+          JAVASCRIPT PROJECT
+        </p>
+
+        <h1 class="text-4xl md:text-5xl font-bold text-[#654936] mb-4">
+          Discount Calculator
+        </h1>
+
+        <p class="text-[#765B47] leading-7 max-w-xl mx-auto">
+          Kalkulator sederhana untuk menghitung harga setelah mendapatkan diskon.
+        </p>
+
+      </div>
+
+      <div class="max-w-lg mx-auto">
+
+        <div class="bg-[#FFFDF9] border border-[#E5CDB5] rounded-3xl p-7 shadow-sm">
+
+
+          <label class="block mb-2 font-medium text-[#654936]">
+            Harga Barang
+          </label>
+
+          <input
+            type="number"
+            id="harga"
+            placeholder="Masukkan harga barang"
+            class="w-full border border-[#DCC0A3] bg-[#FFF9F0] p-3 mb-5 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D89A70]">
+
+
+          <label class="block mb-2 font-medium text-[#654936]">
+            Diskon (%)
+          </label>
+
+          <input
+            type="number"
+            id="diskon"
+            placeholder="Masukkan diskon"
+            class="w-full border border-[#DCC0A3] bg-[#FFF9F0] p-3 mb-6 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D89A70]">
+
+
+          <button
+            onclick="hitungDiskon()"
+            class="w-full bg-[#B9784F] text-white px-6 py-3 rounded-xl font-medium hover:bg-[#9F613D] hover:-translate-y-0.5 transition shadow-md">
+
+            Hitung Diskon →
+
+          </button>
+
+
+          <div
+            id="hasil"
+            class="mt-6 bg-[#F8E8D6] border border-[#E5CDB5] rounded-2xl p-5 hidden">
+
+            <h2 class="font-bold text-lg text-[#80583D] mb-3">
+              Hasil Perhitungan
+            </h2>
+
+            <p id="hargaAwal" class="text-[#765B47] mb-2"></p>
+
+            <p id="jumlahDiskon" class="text-[#765B47] mb-2"></p>
+
+            <p id="hargaAkhir" class="font-bold text-[#B9784F] text-lg"></p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+
+  <footer class="bg-[#80583D] text-[#FFF3E0] py-6">
+
+    <div class="max-w-6xl mx-auto px-5 text-center">
+
+      <p>
+        © 2026 Gita Sundara
+      </p>
+
+      <p class="text-sm text-[#F5DDC6] mt-1">
+        JavaScript Project
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+
+    function hitungDiskon() {
+
+      let harga = parseFloat(document.getElementById("harga").value);
+
+      let diskon = parseFloat(document.getElementById("diskon").value);
+
+
+      if (isNaN(harga) || isNaN(diskon)) {
+
+        alert("Silakan masukkan harga dan diskon terlebih dahulu.");
+
+        return;
+
+      }
+
+
+      if (harga < 0 || diskon < 0 || diskon > 100) {
+
+        alert("Harga harus lebih dari 0 dan diskon harus 0-100%.");
+
+        return;
+
+      }
+
+      let jumlahDiskon = harga * diskon / 100;
+
+      let hargaAkhir = harga - jumlahDiskon;
+
+
+      document.getElementById("hargaAwal").innerHTML =
+        "Harga awal: Rp " + harga.toLocaleString("id-ID");
+
+      document.getElementById("jumlahDiskon").innerHTML =
+        "Jumlah diskon: Rp " + jumlahDiskon.toLocaleString("id-ID");
+
+      document.getElementById("hargaAkhir").innerHTML =
+        "Harga setelah diskon: Rp " + hargaAkhir.toLocaleString("id-ID");
+
+
+      document.getElementById("hasil").classList.remove("hidden");
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>

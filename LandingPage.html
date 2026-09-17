@@ -1,329 +1,456 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="./src/output.css" rel="stylesheet">
+  <link href="./src/output.css" rel="stylesheet">
 
-    <title>Gita Sundara - Portfolio</title>
+  <title>Gita Sundara - Portfolio</title>
 </head>
 
-<body class="bg-white text-gray-700">
+<body class="bg-[#FFF9F0] text-[#654936]">
 
-    <nav class="bg-gray-100 border-b border-gray-200">
 
-        <div class="max-w-5xl mx-auto px-5 py-4">
+  <nav class="bg-[#FFF9F0] border-b border-[#EAD7C2] sticky top-0 z-50">
 
-            <div class="flex justify-between items-center">
+    <div class="max-w-6xl mx-auto px-5 py-5">
 
-                <h1 class="text-xl font-bold text-gray-800">
-                    Gita
-                </h1>
+      <div class="flex justify-between items-center">
 
-                <div class="flex gap-5">
+        <a href="#home"
+          class="text-2xl font-bold text-[#80583D] hover:text-[#B9784F]">
+          Gita<span class="text-[#D89A70]">.</span>
+        </a>
 
-                    <a href="#home" class="hover:text-blue-600">
-                        Home
-                    </a>
+        <div class="hidden md:flex items-center gap-7 text-sm font-medium">
 
-                    <a href="#about" class="hover:text-blue-600">
-                        About
-                    </a>
+          <a href="#home"
+            class="hover:text-[#B9784F] transition">
+            Home
+          </a>
 
-                    <a href="#projects" class="hover:text-blue-600">
-                        Projects
-                    </a>
+          <a href="#about"
+            class="hover:text-[#B9784F] transition">
+            About
+          </a>
 
-                    <a href="#contact" class="hover:text-blue-600">
-                        Contact
-                    </a>
+          <a href="#projects"
+            class="hover:text-[#B9784F] transition">
+            Projects
+          </a>
 
-                </div>
+          <a href="javascript.html"
+            class="hover:text-[#B9784F] transition">
+            JavaScript
+          </a>
 
+          <a href="#contact"
+            class="hover:text-[#B9784F] transition">
+            Contact
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <section id="home" class="py-16 md:py-24">
+
+    <div class="max-w-6xl mx-auto px-5">
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+
+
+        <div>
+
+          <p class="inline-block bg-[#F5DDC6] text-[#A56845] px-4 py-2 rounded-full text-sm font-medium mb-5">
+            Hello, I'm Gita 👋
+          </p>
+
+          <h1 class="text-5xl md:text-6xl font-bold leading-tight text-[#654936]">
+            Gita
+            <span class="text-[#B9784F]">
+              Sundara.
+            </span>
+          </h1>
+
+          <h2 class="text-xl md:text-2xl font-medium text-[#8A6A54] mt-4 mb-6">
+            Computer Science Student
+          </h2>
+
+          <p class="text-[#765B47] leading-8 max-w-lg mb-8">
+            Saya mahasiswa Ilmu Komputer yang tertarik
+            dengan web development, UI/UX, dan teknologi.
+            Saya senang belajar hal baru dan membuat
+            project sederhana.
+          </p>
+
+
+          <!-- BUTTON -->
+          <div class="flex flex-wrap gap-3">
+
+            <a href="#projects"
+              class="inline-flex items-center bg-[#B9784F] text-white px-6 py-3 rounded-xl font-medium shadow-md hover:bg-[#9F613D] hover:-translate-y-0.5 transition">
+              View Projects
+              <span class="ml-2">
+                →
+              </span>
+            </a>
+
+            <a href="javascript.html"
+              class="inline-flex items-center bg-[#FFF3E0] border border-[#D9B998] text-[#A56845] px-6 py-3 rounded-xl font-medium hover:bg-[#F5DDC6] transition">
+              JavaScript Project
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- HERO IMAGE -->
+        <div class="relative flex justify-center">
+
+          <div class="absolute w-72 h-72 md:w-80 md:h-80 bg-[#F3D3B5] rounded-full blur-2xl opacity-70">
+          </div>
+
+          <div class="relative">
+
+            <div class="absolute -top-4 -right-4 bg-[#E9B88F] w-12 h-12 rounded-full">
             </div>
 
-        </div>
-
-    </nav>
-
-    <section id="home" class="py-20">
-
-        <div class="max-w-5xl mx-auto px-5">
-
-            <div class="grid md:grid-cols-2 gap-10 items-center">
-
-                <div>
-
-                    <p class="text-blue-600 mb-2">
-                        Hello, I'm
-                    </p>
-
-                    <h2 class="text-4xl font-bold text-gray-800 mb-4">
-                        Gita Sundara
-                    </h2>
-
-                    <h3 class="text-xl text-gray-700 mb-5">
-                        Computer Science Student
-                    </h3>
-
-                    <p class="mb-6 leading-7">
-                        Saya mahasiswa Ilmu Komputer yang tertarik
-                        dengan web development, UI/UX, dan teknologi.
-                    </p>
-
-                </div>
-
-
-                <div class="text-center">
-
-                    <img src="./profile.jpeg"
-                        alt="Foto Gita"
-                        class="w-64 h-72 object-cover mx-auto border border-gray-300">
-
-                </div>
-
+            <div class="absolute -bottom-4 -left-5 bg-[#D8A77D] w-8 h-8 rounded-full">
             </div>
 
+            <img src="./profile.jpeg"
+              alt="Foto Gita"
+              class="relative w-64 h-80 md:w-72 md:h-88 object-cover rounded-[2rem] border-8 border-[#FFFDF9] shadow-xl">
+
+          </div>
+
         </div>
 
-    </section>
+      </div>
+
+    </div>
+
+  </section>
 
 
-    <section id="about" class="bg-gray-100 py-16">
+  <section id="about" class="bg-[#F8E8D6] py-20">
 
-        <div class="max-w-5xl mx-auto px-5">
+    <div class="max-w-6xl mx-auto px-5">
 
-            <h2 class="text-3xl font-bold text-gray-800 mb-5">
-                About Me
-            </h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
 
-            <p class="leading-7">
-                Saya Gita Sundara, mahasiswa Ilmu Komputer yang tertarik
-                dengan teknologi, web development, dan UI/UX design.
-                Saat ini saya sedang mempelajari HTML, CSS, Python,
-                database, serta beberapa dasar pengembangan aplikasi.
-                Saya senang mencoba hal baru dan membuat project sederhana
-                untuk mengembangkan kemampuan saya.
+
+        <div>
+
+          <p class="text-[#B9784F] font-semibold mb-2">
+            ABOUT ME
+          </p>
+
+          <h2 class="text-4xl font-bold text-[#654936] mb-6">
+            A little bit about me.
+          </h2>
+
+          <p class="leading-8 text-[#765B47]">
+            Saya Gita Sundara, mahasiswa Ilmu Komputer yang tertarik
+            dengan teknologi, web development, dan UI/UX design.
+            Saat ini saya sedang mempelajari HTML, CSS, Python,
+            database, serta beberapa dasar pengembangan aplikasi.
+            Saya senang mencoba hal baru dan membuat project sederhana
+            untuk mengembangkan kemampuan saya.
+          </p>
+
+        </div>
+
+
+        <div class="grid grid-cols-2 gap-4">
+
+          <div class="bg-[#FFFDF9] border border-[#E8CFB6] p-6 rounded-2xl shadow-sm">
+
+            <p class="text-3xl mb-3">
+              💻
             </p>
 
-        </div>
+            <h3 class="font-bold text-lg text-[#80583D] mb-2">
+              Web
+            </h3>
 
-    </section>
-
-
-    <section id="projects" class="bg-gray-100 py-16">
-
-        <div class="max-w-5xl mx-auto px-5">
-
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">
-                My Projects
-            </h2>
-
-            <div class="grid md:grid-cols-3 gap-5">
-
-                <div class="bg-white border border-gray-200 p-5 rounded">
-
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">
-                        UI/UX Design
-                    </h3>
-
-                    <p>
-                        Membuat desain antarmuka dan pengalaman pengguna
-                        untuk aplikasi yang mudah digunakan dan nyaman.
-                    </p>
-
-                </div>
-
-                <div class="bg-white border border-gray-200 p-5 rounded">
-
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">
-                        ParkFTK
-                    </h3>
-
-                    <p>
-                        Konsep aplikasi untuk melihat kondisi
-                        parkir di lingkungan kampus.
-                    </p>
-
-                </div>
-
-                <div class="bg-white border border-gray-200 p-5 rounded">
-
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">
-                        System Analysis & Design
-                    </h3>
-
-                    <p>
-                        Merancang sistem informasi dengan membuat analisis
-                        kebutuhan, desain sistem, dan dokumentasi untuk
-                        mendukung proses penyampaian informasi.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="contact" class="py-16">
-
-        <div class="max-w-2xl mx-auto px-5">
-
-            <h2 class="text-3xl font-bold text-gray-800 mb-3 text-center">
-                Contact Me
-            </h2>
-
-            <p class="text-center mb-8">
-                Silakan hubungi saya melalui form berikut.
+            <p class="text-sm leading-6 text-[#806652]">
+              Exploring web development and building simple websites.
             </p>
 
-
-            <form id="contactForm"
-                class="border border-gray-200 p-6 rounded">
-
-                <label class="block mb-2">
-                    Name
-                </label>
-
-                <input
-                    id="name"
-                    type="text"
-                    class="w-full border border-gray-300 p-2 mb-5 rounded"
-                    placeholder="Your name">
+          </div>
 
 
-                <label class="block mb-2">
-                    Email
-                </label>
+          <div class="bg-[#FFFDF9] border border-[#E8CFB6] p-6 rounded-2xl shadow-sm">
 
-                <input
-                    id="email"
-                    type="email"
-                    class="w-full border border-gray-300 p-2 mb-5 rounded"
-                    placeholder="Your email">
-
-
-                <label class="block mb-2">
-                    Message
-                </label>
-
-                <textarea
-                    id="message"
-                    class="w-full border border-gray-300 p-2 mb-5 rounded"
-                    rows="5"
-                    placeholder="Your message"></textarea>
-
-
-                <button
-                    type="submit"
-                    class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700">
-
-                    Send Message
-
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-    <footer class="bg-gray-800 text-white py-5">
-
-        <div class="text-center">
-
-            <p id="footerYear">
-                © 2026 Gita Sundara
+            <p class="text-3xl mb-3">
+              🎨
             </p>
 
+            <h3 class="font-bold text-lg text-[#80583D] mb-2">
+              UI/UX
+            </h3>
+
+            <p class="text-sm leading-6 text-[#806652]">
+              Interested in creating simple and comfortable interfaces.
+            </p>
+
+          </div>
+
+
+          <div class="bg-[#FFFDF9] border border-[#E8CFB6] p-6 rounded-2xl shadow-sm">
+
+            <p class="text-3xl mb-3">
+              🧩
+            </p>
+
+            <h3 class="font-bold text-lg text-[#80583D] mb-2">
+              Learning
+            </h3>
+
+            <p class="text-sm leading-6 text-[#806652]">
+              Always exploring new things and improving my skills.
+            </p>
+
+          </div>
+
+
+          <div class="bg-[#B9784F] p-6 rounded-2xl shadow-sm">
+
+            <p class="text-3xl mb-3">
+              ✨
+            </p>
+
+            <h3 class="font-bold text-lg text-white mb-2">
+              Creativity
+            </h3>
+
+            <p class="text-sm leading-6 text-[#FFF3E0]">
+              Enjoy turning ideas into simple digital projects.
+            </p>
+
+          </div>
+
         </div>
 
-    </footer>
+      </div>
 
-    <script>
+    </div>
 
-        // ==============================
-        // SMOOTH SCROLL NAVIGATION
-        // ==============================
-
-        const navLinks = document.querySelectorAll("nav a");
-
-        navLinks.forEach(function (link) {
-
-            link.addEventListener("click", function (event) {
-
-                event.preventDefault();
-
-                const targetId = link.getAttribute("href");
-
-                const targetSection =
-                    document.querySelector(targetId);
-
-                targetSection.scrollIntoView({
-                    behavior: "smooth"
-                });
-
-            });
-
-        });
+  </section>
 
 
-        const form = document.getElementById("contactForm");
+  <section id="projects" class="py-20">
 
-        const nameInput = document.getElementById("name");
-
-        const emailInput = document.getElementById("email");
-
-        const messageInput = document.getElementById("message");
+    <div class="max-w-6xl mx-auto px-5">
 
 
-        form.addEventListener("submit", function (event) {
+      <div class="mb-10">
 
-            event.preventDefault();
+        <p class="text-[#B9784F] font-semibold mb-2">
+          MY WORK
+        </p>
 
+        <h2 class="text-4xl font-bold text-[#654936]">
+          Selected Projects
+        </h2>
 
-            const name = nameInput.value.trim();
+        <p class="text-[#806652] mt-3 max-w-xl">
+          Beberapa project yang pernah saya kerjakan
+          selama belajar dan mengembangkan kemampuan.
+        </p>
 
-            const email = emailInput.value.trim();
-
-            const message = messageInput.value.trim();
-
-
-            if (name === "" || email === "" || message === "") {
-
-                alert("Please fill in all fields.");
-
-                return;
-
-            }
+      </div>
 
 
-            alert(
-                "Thank you, " + name +
-                "! Your message has been sent."
-            );
+      <div class="grid md:grid-cols-2 gap-5">
 
 
-            form.reset();
+        <div class="md:row-span-2 bg-[#F4DEC8] border border-[#E4C5A6] rounded-3xl p-7 hover:shadow-xl hover:-translate-y-1 transition">
 
-        });
+          <div class="flex justify-between items-start mb-16">
 
-        const footerYear =
-            document.getElementById("footerYear");
+            <span class="bg-[#FFF9F0] text-[#A56845] text-sm px-3 py-1 rounded-full">
+              UI/UX
+            </span>
 
-        const currentYear =
-            new Date().getFullYear();
+            <span class="text-2xl text-[#A56845]">
+              ↗
+            </span>
 
-        footerYear.textContent =
-            "© " + currentYear + " Gita Sundara";
+          </div>
 
-    </script>
+          <h3 class="text-3xl font-bold text-[#654936] mb-4">
+            UI/UX Design
+          </h3>
+
+          <p class="leading-7 text-[#765B47]">
+            Membuat desain antarmuka dan pengalaman pengguna
+            untuk aplikasi yang mudah digunakan dan nyaman.
+          </p>
+
+        </div>
+
+
+        <div class="bg-[#FFFDF9] border border-[#E8CFB6] rounded-3xl p-7 hover:shadow-xl hover:-translate-y-1 transition">
+
+          <div class="flex justify-between items-start mb-8">
+
+            <span class="bg-[#F8E8D6] text-[#A56845] text-sm px-3 py-1 rounded-full">
+              Campus
+            </span>
+
+            <span class="text-2xl text-[#A56845]">
+              ↗
+            </span>
+
+          </div>
+
+          <h3 class="text-2xl font-bold text-[#80583D] mb-3">
+            ParkFTK
+          </h3>
+
+          <p class="leading-7 text-[#765B47]">
+            Konsep aplikasi untuk melihat kondisi
+            parkir di lingkungan kampus.
+          </p>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+        <div class="bg-[#FFFDF9] border border-[#E8CFB6] rounded-3xl p-7 hover:shadow-xl hover:-translate-y-1 transition">
+
+          <div class="flex justify-between items-start mb-8">
+
+            <span class="bg-[#F8E8D6] text-[#A56845] text-sm px-3 py-1 rounded-full">
+              System
+            </span>
+
+            <span class="text-2xl text-[#A56845]">
+              ↗
+            </span>
+
+          </div>
+
+          <h3 class="text-2xl font-bold text-[#80583D] mb-3">
+            System Analysis & Design
+          </h3>
+
+          <p class="leading-7 text-[#765B47]">
+            Merancang sistem informasi dengan membuat analisis
+            kebutuhan, desain sistem, dan dokumentasi untuk
+            mendukung proses penyampaian informasi.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="contact" class="bg-[#F8E8D6] py-20">
+
+    <div class="max-w-5xl mx-auto px-5">
+
+
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+
+
+        <div>
+          <h2 class="text-4xl font-bold text-[#654936] mb-5">
+            Let's connect.
+          </h2>
+
+          <p class="leading-8 text-[#765B47] max-w-md">
+            Silakan hubungi saya melalui form berikut.
+            Saya terbuka untuk berdiskusi mengenai project,
+            ide, maupun hal lainnya.
+          </p>
+
+        </div>
+
+        <form class="bg-[#FFFDF9] border border-[#E5CDB5] p-7 rounded-3xl shadow-sm">
+
+          <label class="block mb-2 font-medium text-[#654936]">
+            Name
+          </label>
+
+          <input
+            type="text"
+            class="w-full border border-[#DCC0A3] bg-[#FFF9F0] p-3 mb-5 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D89A70]"
+            placeholder="Your name">
+
+
+          <label class="block mb-2 font-medium text-[#654936]">
+            Email
+          </label>
+
+          <input
+            type="email"
+            class="w-full border border-[#DCC0A3] bg-[#FFF9F0] p-3 mb-5 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D89A70]"
+            placeholder="Your email">
+
+
+          <label class="block mb-2 font-medium text-[#654936]">
+            Message
+          </label>
+
+          <textarea
+            class="w-full border border-[#DCC0A3] bg-[#FFF9F0] p-3 mb-5 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D89A70]"
+            rows="5"
+            placeholder="Your message"></textarea>
+
+
+          <button
+            type="submit"
+            class="bg-[#B9784F] text-white px-6 py-3 rounded-xl font-medium hover:bg-[#9F613D] hover:-translate-y-0.5 transition shadow-md">
+
+            Send Message →
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="bg-[#80583D] text-[#FFF3E0] py-6">
+
+    <div class="max-w-6xl mx-auto px-5">
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-3">
+
+        <p>
+          © 2026 Gita Sundara
+        </p>
+
+        <p class="text-sm text-[#F5DDC6]">
+          Computer Science Student
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
 
 </body>
 
 </html>
-```
