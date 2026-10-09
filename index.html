@@ -1,22 +1,32 @@
+
 <!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="./src/output.css" rel="stylesheet">
-
   <title>Gita Sundara - Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #FFF9F0;
+      color: #654936;
+    }
+  </style>
 </head>
 
 <body class="bg-[#FFF9F0] text-[#654936]">
 
-
+  <!-- NAVBAR -->
   <nav class="bg-[#FFF9F0] border-b border-[#EAD7C2] sticky top-0 z-50">
-
     <div class="max-w-6xl mx-auto px-5 py-5">
-
       <div class="flex justify-between items-center">
 
         <a href="#home"
@@ -25,59 +35,29 @@
         </a>
 
         <div class="hidden md:flex items-center gap-7 text-sm font-medium">
-
-          <a href="#home"
-            class="hover:text-[#B9784F] transition">
-            Home
-          </a>
-
-          <a href="#about"
-            class="hover:text-[#B9784F] transition">
-            About
-          </a>
-
-          <a href="#projects"
-            class="hover:text-[#B9784F] transition">
-            Projects
-          </a>
-
-          <a href="Javascript.html"
-            class="hover:text-[#B9784F] transition">
-            JavaScript
-          </a>
-
-          <a href="#contact"
-            class="hover:text-[#B9784F] transition">
-            Contact
-          </a>
-
+          <a href="#home" class="hover:text-[#B9784F] transition">Home</a>
+          <a href="#about" class="hover:text-[#B9784F] transition">About</a>
+          <a href="#projects" class="hover:text-[#B9784F] transition">Projects</a>
+          <a href="Javascript.html" class="hover:text-[#B9784F] transition">JavaScript</a>
+          <a href="#contact" class="hover:text-[#B9784F] transition">Contact</a>
         </div>
 
       </div>
-
     </div>
-
   </nav>
 
-
+  <!-- HOME -->
   <section id="home" class="py-16 md:py-24">
-
     <div class="max-w-6xl mx-auto px-5">
-
       <div class="grid md:grid-cols-2 gap-12 items-center">
 
-
         <div>
-
           <p class="inline-block bg-[#F5DDC6] text-[#A56845] px-4 py-2 rounded-full text-sm font-medium mb-5">
             Hello, I'm Gita 👋
           </p>
 
           <h1 class="text-5xl md:text-6xl font-bold leading-tight text-[#654936]">
-            Gita
-            <span class="text-[#B9784F]">
-              Sundara.
-            </span>
+            Gita <span class="text-[#B9784F]">Sundara.</span>
           </h1>
 
           <h2 class="text-xl md:text-2xl font-medium text-[#8A6A54] mt-4 mb-6">
@@ -91,69 +71,44 @@
             project sederhana.
           </p>
 
-
-          <!-- BUTTON -->
           <div class="flex flex-wrap gap-3">
-
             <a href="#projects"
               class="inline-flex items-center bg-[#B9784F] text-white px-6 py-3 rounded-xl font-medium shadow-md hover:bg-[#9F613D] hover:-translate-y-0.5 transition">
-              View Projects
-              <span class="ml-2">
-                →
-              </span>
+              View Projects <span class="ml-2">→</span>
             </a>
 
             <a href="Javascript.html"
               class="inline-flex items-center bg-[#FFF3E0] border border-[#D9B998] text-[#A56845] px-6 py-3 rounded-xl font-medium hover:bg-[#F5DDC6] transition">
               JavaScript Project
             </a>
-
           </div>
-
         </div>
 
-
-        <!-- HERO IMAGE -->
+        <!-- PROFILE PHOTO -->
         <div class="relative flex justify-center">
-
-          <div class="absolute w-72 h-72 md:w-80 md:h-80 bg-[#F3D3B5] rounded-full blur-2xl opacity-70">
-          </div>
+          <div class="absolute w-72 h-72 md:w-80 md:h-80 bg-[#F3D3B5] rounded-full blur-2xl opacity-70"></div>
 
           <div class="relative">
-
-            <div class="absolute -top-4 -right-4 bg-[#E9B88F] w-12 h-12 rounded-full">
-            </div>
-
-            <div class="absolute -bottom-4 -left-5 bg-[#D8A77D] w-8 h-8 rounded-full">
-            </div>
+            <div class="absolute -top-4 -right-4 bg-[#E9B88F] w-12 h-12 rounded-full"></div>
+            <div class="absolute -bottom-4 -left-5 bg-[#D8A77D] w-8 h-8 rounded-full"></div>
 
             <img src="./profile.jpeg"
               alt="Foto Gita"
-              class="relative w-64 h-80 md:w-72 md:h-88 object-cover rounded-[2rem] border-8 border-[#FFFDF9] shadow-xl">
-
+              class="relative w-64 h-80 md:w-72 md:h-96 object-cover rounded-[2rem] border-8 border-[#FFFDF9] shadow-xl">
           </div>
-
         </div>
 
       </div>
-
     </div>
-
   </section>
 
-
+  <!-- ABOUT -->
   <section id="about" class="bg-[#F8E8D6] py-20">
-
     <div class="max-w-6xl mx-auto px-5">
-
       <div class="grid md:grid-cols-2 gap-12 items-center">
 
-
         <div>
-
-          <p class="text-[#B9784F] font-semibold mb-2">
-            ABOUT ME
-          </p>
+          <p class="text-[#B9784F] font-semibold mb-2">ABOUT ME</p>
 
           <h2 class="text-4xl font-bold text-[#654936] mb-6">
             A little bit about me.
@@ -167,98 +122,53 @@
             Saya senang mencoba hal baru dan membuat project sederhana
             untuk mengembangkan kemampuan saya.
           </p>
-
         </div>
-
 
         <div class="grid grid-cols-2 gap-4">
 
           <div class="bg-[#FFFDF9] border border-[#E8CFB6] p-6 rounded-2xl shadow-sm">
-
-            <p class="text-3xl mb-3">
-              💻
-            </p>
-
-            <h3 class="font-bold text-lg text-[#80583D] mb-2">
-              Web
-            </h3>
-
+            <p class="text-3xl mb-3">💻</p>
+            <h3 class="font-bold text-lg text-[#80583D] mb-2">Web</h3>
             <p class="text-sm leading-6 text-[#806652]">
               Exploring web development and building simple websites.
             </p>
-
           </div>
 
-
           <div class="bg-[#FFFDF9] border border-[#E8CFB6] p-6 rounded-2xl shadow-sm">
-
-            <p class="text-3xl mb-3">
-              🎨
-            </p>
-
-            <h3 class="font-bold text-lg text-[#80583D] mb-2">
-              UI/UX
-            </h3>
-
+            <p class="text-3xl mb-3">🎨</p>
+            <h3 class="font-bold text-lg text-[#80583D] mb-2">UI/UX</h3>
             <p class="text-sm leading-6 text-[#806652]">
               Interested in creating simple and comfortable interfaces.
             </p>
-
           </div>
 
-
           <div class="bg-[#FFFDF9] border border-[#E8CFB6] p-6 rounded-2xl shadow-sm">
-
-            <p class="text-3xl mb-3">
-              🧩
-            </p>
-
-            <h3 class="font-bold text-lg text-[#80583D] mb-2">
-              Learning
-            </h3>
-
+            <p class="text-3xl mb-3">🧩</p>
+            <h3 class="font-bold text-lg text-[#80583D] mb-2">Learning</h3>
             <p class="text-sm leading-6 text-[#806652]">
               Always exploring new things and improving my skills.
             </p>
-
           </div>
 
-
           <div class="bg-[#B9784F] p-6 rounded-2xl shadow-sm">
-
-            <p class="text-3xl mb-3">
-              ✨
-            </p>
-
-            <h3 class="font-bold text-lg text-white mb-2">
-              Creativity
-            </h3>
-
+            <p class="text-3xl mb-3">✨</p>
+            <h3 class="font-bold text-lg text-white mb-2">Creativity</h3>
             <p class="text-sm leading-6 text-[#FFF3E0]">
               Enjoy turning ideas into simple digital projects.
             </p>
-
           </div>
 
         </div>
-
       </div>
-
     </div>
-
   </section>
 
-
+  <!-- PROJECTS -->
   <section id="projects" class="py-20">
-
     <div class="max-w-6xl mx-auto px-5">
 
-
       <div class="mb-10">
-
-        <p class="text-[#B9784F] font-semibold mb-2">
-          MY WORK
-        </p>
+        <p class="text-[#B9784F] font-semibold mb-2">MY WORK</p>
 
         <h2 class="text-4xl font-bold text-[#654936]">
           Selected Projects
@@ -268,25 +178,51 @@
           Beberapa project yang pernah saya kerjakan
           selama belajar dan mengembangkan kemampuan.
         </p>
-
       </div>
-
 
       <div class="grid md:grid-cols-2 gap-5">
 
+        <!-- PROJECT: MYSHOP -->
+        <div class="bg-[#FFFDF9] border border-[#E8CFB6] rounded-3xl p-7 hover:shadow-xl hover:-translate-y-1 transition">
 
+          <div class="flex justify-between items-start mb-8">
+            <span class="bg-[#F8E8D6] text-[#A56845] text-sm px-3 py-1 rounded-full">
+              React App
+            </span>
+            <span class="text-2xl text-[#A56845]">↗</span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-[#80583D] mb-3">
+            MyShop
+          </h3>
+
+          <p class="leading-7 text-[#765B47] mb-4">
+            A simple e-commerce web application built with React,
+            featuring product browsing, product details, shopping cart,
+            and order management.
+          </p>
+
+          <p class="text-sm text-[#A56845] mb-6">
+            React · JavaScript · Vite · Tailwind CSS
+          </p>
+
+          <a href="https://myshop-two-orpin.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center bg-[#B9784F] text-white px-5 py-3 rounded-xl font-medium hover:bg-[#9F613D] transition">
+            Visit MyShop ↗
+          </a>
+
+        </div>
+
+        <!-- PROJECT: UI/UX DESIGN -->
         <div class="md:row-span-2 bg-[#F4DEC8] border border-[#E4C5A6] rounded-3xl p-7 hover:shadow-xl hover:-translate-y-1 transition">
 
           <div class="flex justify-between items-start mb-16">
-
             <span class="bg-[#FFF9F0] text-[#A56845] text-sm px-3 py-1 rounded-full">
               UI/UX
             </span>
-
-            <span class="text-2xl text-[#A56845]">
-              ↗
-            </span>
-
+            <span class="text-2xl text-[#A56845]">↗</span>
           </div>
 
           <h3 class="text-3xl font-bold text-[#654936] mb-4">
@@ -297,22 +233,16 @@
             Membuat desain antarmuka dan pengalaman pengguna
             untuk aplikasi yang mudah digunakan dan nyaman.
           </p>
-
         </div>
 
-
+        <!-- PROJECT: PARKFTK -->
         <div class="bg-[#FFFDF9] border border-[#E8CFB6] rounded-3xl p-7 hover:shadow-xl hover:-translate-y-1 transition">
 
           <div class="flex justify-between items-start mb-8">
-
             <span class="bg-[#F8E8D6] text-[#A56845] text-sm px-3 py-1 rounded-full">
               Campus
             </span>
-
-            <span class="text-2xl text-[#A56845]">
-              ↗
-            </span>
-
+            <span class="text-2xl text-[#A56845]">↗</span>
           </div>
 
           <h3 class="text-2xl font-bold text-[#80583D] mb-3">
@@ -323,27 +253,20 @@
             Konsep aplikasi untuk melihat kondisi
             parkir di lingkungan kampus.
           </p>
-
         </div>
 
-
-        <!-- PROJECT 3 -->
+        <!-- PROJECT: SYSTEM ANALYSIS -->
         <div class="bg-[#FFFDF9] border border-[#E8CFB6] rounded-3xl p-7 hover:shadow-xl hover:-translate-y-1 transition">
 
           <div class="flex justify-between items-start mb-8">
-
             <span class="bg-[#F8E8D6] text-[#A56845] text-sm px-3 py-1 rounded-full">
               System
             </span>
-
-            <span class="text-2xl text-[#A56845]">
-              ↗
-            </span>
-
+            <span class="text-2xl text-[#A56845]">↗</span>
           </div>
 
           <h3 class="text-2xl font-bold text-[#80583D] mb-3">
-            System Analysis & Design
+            System Analysis &amp; Design
           </h3>
 
           <p class="leading-7 text-[#765B47]">
@@ -351,23 +274,16 @@
             kebutuhan, desain sistem, dan dokumentasi untuk
             mendukung proses penyampaian informasi.
           </p>
-
         </div>
 
       </div>
-
     </div>
-
   </section>
 
-
+  <!-- CONTACT -->
   <section id="contact" class="bg-[#F8E8D6] py-20">
-
     <div class="max-w-5xl mx-auto px-5">
-
-
       <div class="grid md:grid-cols-2 gap-12 items-start">
-
 
         <div>
           <h2 class="text-4xl font-bold text-[#654936] mb-5">
@@ -379,78 +295,71 @@
             Saya terbuka untuk berdiskusi mengenai project,
             ide, maupun hal lainnya.
           </p>
-
         </div>
 
-        <form class="bg-[#FFFDF9] border border-[#E5CDB5] p-7 rounded-3xl shadow-sm">
+        <form
+          class="bg-[#FFFDF9] border border-[#E5CDB5] p-7 rounded-3xl shadow-sm"
+          onsubmit="event.preventDefault(); alert('Terima kasih! Form ini belum terhubung ke layanan pengiriman pesan.');">
 
-          <label class="block mb-2 font-medium text-[#654936]">
+          <label for="name" class="block mb-2 font-medium text-[#654936]">
             Name
           </label>
 
           <input
+            id="name"
             type="text"
+            required
             class="w-full border border-[#DCC0A3] bg-[#FFF9F0] p-3 mb-5 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D89A70]"
             placeholder="Your name">
 
-
-          <label class="block mb-2 font-medium text-[#654936]">
+          <label for="email" class="block mb-2 font-medium text-[#654936]">
             Email
           </label>
 
           <input
+            id="email"
             type="email"
+            required
             class="w-full border border-[#DCC0A3] bg-[#FFF9F0] p-3 mb-5 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D89A70]"
             placeholder="Your email">
 
-
-          <label class="block mb-2 font-medium text-[#654936]">
+          <label for="message" class="block mb-2 font-medium text-[#654936]">
             Message
           </label>
 
           <textarea
+            id="message"
+            required
             class="w-full border border-[#DCC0A3] bg-[#FFF9F0] p-3 mb-5 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D89A70]"
             rows="5"
             placeholder="Your message"></textarea>
 
-
           <button
             type="submit"
-            class="bg-[#B9784F] text-white px-6 py-3 rounded-xl font-medium hover:bg-[#9F613D] hover:-translate-y-0.5 transition shadow-md">
-
+            class="bg-[#B9784F] text-white px-6 py-3 rounded-xl font-medium hover:bg-[#9F613D] transition shadow-md">
             Send Message →
-
           </button>
 
         </form>
 
       </div>
-
     </div>
-
   </section>
 
+  <!-- FOOTER -->
   <footer class="bg-[#80583D] text-[#FFF3E0] py-6">
-
     <div class="max-w-6xl mx-auto px-5">
-
       <div class="flex flex-col md:flex-row justify-between items-center gap-3">
 
-        <p>
-          © 2026 Gita Sundara
-        </p>
+        <p>© 2026 Gita Sundara</p>
 
         <p class="text-sm text-[#F5DDC6]">
           Computer Science Student
         </p>
 
       </div>
-
     </div>
-
   </footer>
 
-
 </body>
-
 </html>
